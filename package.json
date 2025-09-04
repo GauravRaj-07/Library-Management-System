@@ -1,0 +1,26 @@
+{
+  "name": "library-management-system",
+  "version": "1.0.0",
+  "description": "This is a Library Management API backend for the management od users and the books in the library.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GauravRaj-07/Library-Management-System.git"
+  },
+  "author": "Gaurav Raj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GauravRaj-07/Library-Management-System/issues"
+  },
+  "homepage": "https://github.com/GauravRaj-07/Library-Management-System#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

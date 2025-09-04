@@ -1,0 +1,60 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "name": "John Doe",
+        "email": "john.doe@example.com",
+        "issuedBooks": "1",
+        "issuedDate": "2023-01-01",
+        "returnDate": "2023-04-01",
+        "subscriptionType": "Basic",
+        "subscriptionDate": "2023-01-01",
+        "fine": 0
+      },
+      {
+        "id": 2,
+        "name": "Alice Johnson",
+        "email": "alice.johnson@example.com",
+        "issuedBooks": "3",
+        "issuedDate": "2023-02-20",
+        "returnDate": "2023-03-15",
+        "subscriptionType": "Premium",
+        "subscriptionDate": "2023-02-01",
+        "fine": 50
+      },
+      {
+        "id": 3,
+        "name": "Michael Smith",
+        "email": "michael.smith@example.com",
+        "issuedBooks": "5",
+        "issuedDate": "2023-03-10",
+        "returnDate": "2023-04-20",
+        "subscriptionType": "Standard",
+        "subscriptionDate": "2023-03-01",
+        "fine": 0
+      },
+      {
+        "id": 4,
+        "name": "Sophia Williams",
+        "email": "sophia.williams@example.com",
+        "issuedBooks": "2",
+        "issuedDate": "2023-05-05",
+        "returnDate": "2023-06-10",
+        "subscriptionType": "Basic",
+        "subscriptionDate": "2023-05-01",
+        "fine": 20
+      },
+      {
+        "id": 5,
+        "name": "David Brown",
+        "email": "david.brown@example.com",
+        "issuedBooks": "4",
+        "issuedDate": "2023-06-20",
+        "returnDate": "2023-07-15",
+        "subscriptionType": "Premium",
+        "subscriptionDate": "2023-06-01",
+        "fine": 100
+      }
+    ]
+  }
+  

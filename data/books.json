@@ -1,0 +1,85 @@
+{
+    "books": [
+      {
+        "id": 1,
+        "name": "The Alchemist",
+        "author": "Paulo Coelho",
+        "genre": "Fiction",
+        "price": 199,
+        "stock": 5
+      },
+      {
+        "id": 2,
+        "name": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "genre": "Classic",
+        "price": 249,
+        "stock": 8
+      },
+      {
+        "id": 3,
+        "name": "1984",
+        "author": "George Orwell",
+        "genre": "Dystopian",
+        "price": 299,
+        "stock": 10
+      },
+      {
+        "id": 4,
+        "name": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "genre": "Classic",
+        "price": 180,
+        "stock": 4
+      },
+      {
+        "id": 5,
+        "name": "Harry Potter and the Philosopher's Stone",
+        "author": "J.K. Rowling",
+        "genre": "Fantasy",
+        "price": 350,
+        "stock": 12
+      },
+      {
+        "id": 6,
+        "name": "The Hobbit",
+        "author": "J.R.R. Tolkien",
+        "genre": "Fantasy",
+        "price": 400,
+        "stock": 7
+      },
+      {
+        "id": 7,
+        "name": "The Catcher in the Rye",
+        "author": "J.D. Salinger",
+        "genre": "Fiction",
+        "price": 220,
+        "stock": 6
+      },
+      {
+        "id": 8,
+        "name": "Sapiens: A Brief History of Humankind",
+        "author": "Yuval Noah Harari",
+        "genre": "Non-Fiction",
+        "price": 450,
+        "stock": 9
+      },
+      {
+        "id": 9,
+        "name": "Atomic Habits",
+        "author": "James Clear",
+        "genre": "Self-Help",
+        "price": 399,
+        "stock": 15
+      },
+      {
+        "id": 10,
+        "name": "Rich Dad Poor Dad",
+        "author": "Robert T. Kiyosaki",
+        "genre": "Personal Finance",
+        "price": 299,
+        "stock": 11
+      }
+    ]
+  }
+  
