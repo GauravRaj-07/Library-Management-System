@@ -1,7 +1,10 @@
 const express = require("express");
 const app = express();
-const {books} = require("../data/books.json");
-const {users} = require("../data/users.json");
+const booksData = require("../data/books.json");
+let books = booksData.books;  // Now you can safely reassign
+
+const usersData = require("../data/users.json");
+let users = usersData.users;
 
 
 app.get("/",(req,res)=>{
@@ -51,7 +54,7 @@ app.put("/:id",(req,res)=>{
         }
         return book;
     });
-    // books=updatedBook;
+    books=updatedBook;
     res.status(200).json({success:true,data:updatedBook,message:"Book updated successfully"});    
 })
 app.delete("/:id",(req,res)=>{
@@ -61,7 +64,7 @@ app.delete("/:id",(req,res)=>{
         return res.status(404).json({success:false,message:`Book not found with id ${id}`});
     }
     const updatedBook=books.filter((book)=>book.id!=id);
-    // books=updatedBook;
+    books=updatedBook;
     res.status(200).json({success:true,data:updatedBook,message:"Book deleted successfully"});    
 })
 
@@ -81,7 +84,7 @@ app.get("/issued/for-users",(req,res)=>{
         issuedBooks.push(book);
     })
 
-    if(!issuedBooks){
+    if(issuedBooks.length===0){
         return res.status(404).json({success:false,message:"No books issued"});
     }
     res.status(200).json({success:true,data:issuedBooks,message:"All issued books"});

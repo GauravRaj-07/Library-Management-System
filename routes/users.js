@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
-const {users} = require("../data/users.json");
-
+const usersData = require("../data/users.json");
+let users = usersData.users;
 
 app.get("/",(req,res)=>{
     res.status(200).json({
@@ -53,7 +53,7 @@ app.put("/:id",(req,res)=>{
         }
         return user;
     });
-    // users=updatedUser;
+    users=updatedUser;
     res.status(200).json({success:true,data:updatedUser,message:"User updated successfully"});    
 })
 app.delete("/:id",(req,res)=>{
@@ -63,7 +63,7 @@ app.delete("/:id",(req,res)=>{
         return res.status(404).json({success:false,message:`User not found with id ${id}`});
     }
     const updatedUser=users.filter((user)=>user.id!=id);
-    // users=updatedUser;
+    users=updatedUser;
     res.status(200).json({success:true,data:updatedUser,message:"User deleted successfully"});    
 })
 
@@ -81,7 +81,7 @@ app.get("/subscription-details/:id",(req,res)=>{
         else{
             date=new Date();
         }
-        let days=Math.floor(date.getTime()/(1000*60*60*24));
+        let days=Math.floor(date/(1000*60*60*24));
         return days;
     }
     const subscriptionType=(date)=>{
