@@ -69,6 +69,9 @@ app.delete("/:id",(req,res)=>{
 })
 
 app.get("/issued/for-users",(req,res)=>{
+    //using foreign key concept to connect books and users
+    //foreign key is issuedBooks
+    //issuedBooks is the id of the book in the users array
     const userWithIssuedBooks=users.filter((user)=>{
         if(user.issuedBooks){
             return user;
