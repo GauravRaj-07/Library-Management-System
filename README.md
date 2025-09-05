@@ -47,8 +47,8 @@ GET: Get all the list of books that are issued with fine
 npm init
 npm i express
 npm i nodemon --save-dev
-
-npm run dev
+ 
+npm run dev --> to run the application
 
 To restore node Modules and package-lock.json file
 npm install
