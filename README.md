@@ -53,3 +53,19 @@ npm run dev --> to run the application
 To restore node Modules and package-lock.json file
 npm install
 
+## MongoDB
+npm i mongoose
+
+## MongoDB Connection String
+mongodb+srv://GauravRaj:Gaurav@7627@cluster0.kpf9kzf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+
+npm i dotenv
+
+## MVC Architecture
+  >> Model (structure of database)
+  >> View (frontend)
+  >> Controller (brain/logic of route)
+
+### DTO(Data Transfer Object)
+
+
